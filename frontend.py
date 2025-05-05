@@ -29,7 +29,8 @@ if st.button("Ask Agent!"):
             "allow_search": allow_web_search
         }
 
-        response=requests.post(API_URL, json=payload)
+        response = requests.post(f"{API_URL}/chat", json=payload)
+
         if response.status_code == 200:
             response_data = response.json()
             if "error" in response_data:
