@@ -15,7 +15,7 @@ allow_web_search=st.checkbox("Allow Web Search")
 
 user_query=st.text_area("Enter Your Query: ", placeholder="Ask Anything! ")
 
-API_URL="http://127.0.0.1:9999/chat"
+API_URL="https://chatbot-agent-c0ix.onrender.com"
 
 if st.button("Ask Agent!"):
     if user_query.strip():
